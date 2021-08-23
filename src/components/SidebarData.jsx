@@ -1,24 +1,21 @@
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable no-unused-vars */
-import React, { Component } from 'react';
+import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as RiIcons from 'react-icons/ri';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 
-export const SidebarData = [
+const SidebarData = [
   {
     title: 'Overview',
     path: '/overview',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
         title: 'Users',
         path: '/overview/users',
-        icons: <IoIcons.IoIosPaper />,
+        icon: <IoIcons.IoIosPaper />,
       },
       {
         title: 'Revenue',
@@ -32,12 +29,12 @@ export const SidebarData = [
     path: '/reprots',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
         title: 'Geography',
         path: '/reports/geography',
-        icons: <IoIcons.IoIosPaper />,
+        icon: <IoIcons.IoIosPaper />,
       },
       {
         title: 'Chemistry',
@@ -64,7 +61,7 @@ export const SidebarData = [
   {
     title: 'Messages',
     path: '/messages',
-    icon: <FaIcons.FaIcons.FaEnvelopeOpenText />,
+    icon: <FaIcons.FaEnvelopeOpenText />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
@@ -86,3 +83,5 @@ export const SidebarData = [
     icon: <IoIcons.IoMdHelpCircle />,
   },
 ];
+
+export default SidebarData;
